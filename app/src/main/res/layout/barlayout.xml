@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="CSI Camera Setting Menu"
+            android:layout_marginStart="10pt"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+
+        <Button
+            android:layout_width="20pt"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:id="@+id/exit"
+            android:layout_alignParentEnd="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOCUS"
+            android:id="@+id/focus"
+            android:layout_toLeftOf="@id/exit"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HIDE"
+            android:id="@+id/hide"
+            android:layout_toLeftOf="@id/focus"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
